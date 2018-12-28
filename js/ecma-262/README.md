@@ -36,6 +36,8 @@ ECMAScript 2017引入了异步功能，共享内存和Atomics，以及更小的�
 
 代表许多组织的数十个人在Ecma TC39中为本版本和之前版本的开发做出了非常重要的贡献。此外，一个充满活力的社区已经出现，支持TC39的ECMAScript工作。该社区已经审查了许多草案，提交了数千个错误报告，执行了实施实验，贡献了测试套件，并向全世界开发人员社区介绍了ECMAScript。遗憾的是，无法确定并承认为此工作做出贡献的每个人和组织。
 
-Allen Wirfs-Brock  ECMA-262，第6版项目编辑 
+Allen Wirfs-Brock  
+ECMA-262，第6版项目编辑 
 
-Brian Terlson  ECMA-262，第7版项目编辑
+Brian Terlson  
+ECMA-262，第7版项目编辑
