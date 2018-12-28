@@ -2,11 +2,11 @@
 
 ## 目录
 
-1. [介绍](#1.Scope.md)
-2. [一致性](#2.Conformance.md)
-3. [引用](#3.Normative_References.md)
-4. [概述](#4.Overview.md)
-5. [约定](#5.Notational_Conventions.md)
+1. [介绍](1.Scope.md)
+2. [一致性](2.Conformance.md)
+3. [引用](3.Normative_References.md)
+4. [概述](4.Overview.md)
+5. [约定](5.Notational_Conventions.md)
 
 ## 介绍
 
