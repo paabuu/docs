@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gravity</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        const canvas = document.querySelector('canvas');
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+
+        canvas.width = w;
+        canvas.height = h;
+
+        const c = canvas.getContext('2d');
+
+        class Circle {
+            constructor(x, y, r, dx, dy, gravity, friction) {
+                this.x = x;
+                this.y = y;
+                this.r = r;
+                this.dx = dx;
+                this.dy = dy;
+                this.gravity = gravity;
+                this.friction = friction;
+            }
+
+            create() {
+                c.beginPath();
+                c.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
+                c.fillStyle = 'orange';
+                c.fill();
+                c.closePath();
+            }
+
+            update() {
+                if (this.y + this.r + this.dy > h) {
+                    this.dy = -this.dy * (1 - this.friction);
+                } else {
+                    this.dy += this.gravity;
+                }
+
+                this.y += this.dy;
+                this.create();
+            }
+        }
+
+        const circle = new Circle(w/2, h/2, 30, 2, 1, 1, 0.2);
+
+        animate();
+
+        function animate() {
+            requestAnimationFrame(animate);
+            c.fillStyle = 'rgba(255, 255, 255, 0.25)';
+            c.fillRect(0, 0, w, h);
+            circle.update();
+        }
+    </script>
+</body>
+</html>
