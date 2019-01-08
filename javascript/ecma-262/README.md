@@ -7,8 +7,8 @@
 3. [参考](3.Normative_References.md)
 4. [概述](4.Overview.md)
 5. [约定](5.Notational_Conventions.md)
-6. [数据类型和值](6.Data_Types_Values)
-7. [抽象运算](7.Abstract_Operations)
+6. [数据类型和值](6.Data_Types_Values.md)
+7. [抽象运算](7.Abstract_Operations.md)
 
 ## 介绍
 
