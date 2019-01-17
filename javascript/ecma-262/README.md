@@ -12,6 +12,7 @@
 8. [可执行代码与执行上下文](8.Executable_Code_And_Execution_Contexts.md)
 9. [普通对象和特殊对象的特性](9.Ordinary_And_Exotic_Objects_Behaviours.md)
 10. [ECMAScript语言：源代码](10.ECMAScript_Language_Source_Code.md)
+11. [ECMAScript语言：词汇语法](11.ECMAScript_Language_Lexical_Grammar.md)
 
 ## 介绍
 
