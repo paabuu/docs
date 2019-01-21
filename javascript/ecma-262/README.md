@@ -21,6 +21,7 @@
 17. [标准内置对象](17.ECMAScript_Standard_Biilt-in_Objects.md)
 18. [全局对象](18.The_Global_Object.md)
 19. [基本对象](19.Fundamental_Objects.md)
+20. [数字和日期](20.Numbers_Dates.md)
 
 ## 介绍
 
