@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bobbing</title>
+    <script src="./ball.js"></script>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        background-color: #ccc;
+    }
+
+    canvas {
+        background-color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <canvas width="400" height="400"></canvas>
+    <script>
+        const canvas = document.querySelector('canvas');
+        const context = canvas.getContext('2d');
+        const ball = new Ball({
+            x: 0,
+            y: canvas.height / 2
+        });
+
+        let angle = 0;
+
+        function draw() {
+            requestAnimationFrame(draw);
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            ball.y = canvas.height / 2 + Math.sin(angle) * 100;
+            ball.x += .5;
+            angle += 0.1;
+            ball.draw(context);
+        }
+
+        draw();
+    </script>
+</body>
+</html>
